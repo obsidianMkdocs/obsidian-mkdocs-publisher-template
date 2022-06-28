@@ -1,0 +1,94 @@
+.not_found {
+    background-color: rgba(211, 211, 211, 0.521);
+    display: inline;
+    color: grey;
+    border-radius: 5px;
+    padding-right: 0;
+    padding-left: 3px;
+}
+
+[data-md-color-scheme="slate"] .not_found {
+    color: rgb(182, 181, 181) !important;
+    background-color: rgba(231, 232, 243, 0.185);
+}
+
+[data-md-color-scheme="slate"] .not_found:hover {
+    color: grey;
+    background-color: lightgrey;
+    cursor: not-allowed;
+    filter: saturate(200%);
+}
+
+[data-md-color-scheme="default"] .not_found:hover {
+    color: grey;
+    background-color: lightgrey;
+    cursor: not-allowed;
+    filter: saturate(200%);
+}
+
+.md-footer {
+    display: none;
+}
+
+.dataview {
+    display: none !important;
+}
+
+.tooltip_templates {
+    display: none;
+}
+
+[data-md-color-scheme="slate"] .tooltipster-sidetip .tooltipster-box {
+    background-color: #00000063 !important;
+    border: none;
+}
+
+[data-md-color-scheme="default"] .tooltipster-sidetip .tooltipster-box {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    border: none;
+}
+
+[data-md-color-scheme="default"] .tooltipster-sidetip .tooltipster-content {
+    color: black !important;
+    font-family: var(--md-text-font-family);
+}
+
+[data-md-color-scheme="default"] .citation {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-md-color-scheme="slate"] .citation:hover {
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+[data-md-color-scheme="slate"] .citation {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-md-color-scheme="default"] .citation:hover {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.citation {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.citation>* {
+    margin: 0 !important;
+}
+
+.link_citation {
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    font-weight: normal;
+}
+
+code {
+    display: inline-block;
+}
+
+.md-typeset :is(.admonition, details){
+    font-size: 1em;
+}
