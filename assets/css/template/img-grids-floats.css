@@ -1,10 +1,7 @@
-/*Image Flags Snippet by Lithou
+/*
+Image Flags Snippet by Lithou
 http://github.com/lithou/sandbox
-
-
 */
-
-
 
 img.image-embed,
 img {
@@ -34,6 +31,13 @@ img[alt*="+side"]
     float: right;
     margin: 0px;
     margin-left: var(--coremarg);
+}
+
+@media screen and (max-width:59.9375em){
+    img[alt*="+side"]
+    {
+        width: 12.5em;
+    }
 }
 
 img[alt*="+rside"]
@@ -303,40 +307,4 @@ span[alt*="+grid"] {
 
 .workspace-leaf-content[data-mode="source"] img[alt*="+grid"] {
     width: 20em;
-}
-
-
-/* Grid View Alternative
-
-/* I'm adding explaination commments here so you know how this works.
-
-I'm also writing this so next time I edit this code I don't forget why
-I did it this way and sit there confused for 30mins trying to figure it out.
-
-BTW. Hello future Lithou. If you're reading this: You're welcome
-
-How it works:
-This applies to an image if two conditions are met.
-First condition is if the page has a css class of "grid"
-Second conditions is if no pipe is used when calling an image
-
-examples:
-![[test.jpg|alt text]] <-- will not apply as pipe used to make custom alt text
-![[test.jpg]] <-- will apply since no pipe used
-
-When no pipe is used, no alt attribute is called by the user.
-Obsidian will therefore set the alt attribute equal to the file name. (this is default if it changes, this will pobably break so look here first if it stops working)
-This rule will target any image with an alt attribute that has a period in it.
-Since all image files should follow "name.extension" all will contain a period.
-
-Note: One key to keep in mind is to not use a period as part of any other img flags. */
-
-.img-grid img.image-embed[alt*="."] {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3px;
-}
-
-.img-grid img[alt*="."] {
-    max-height: 30vh;
 }

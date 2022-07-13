@@ -1,0 +1,110 @@
+.not_found {
+    background-color: rgba(211, 211, 211, 0.521);
+    display: inline-block;
+    color: grey;
+    border-radius: 5px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+[data-md-color-scheme="slate"] .not_found {
+    color: rgb(182, 181, 181) !important;
+    background-color: rgba(231, 232, 243, 0.185);
+}
+
+[data-md-color-scheme="slate"] .not_found:hover {
+    color: grey;
+    background-color: lightgrey;
+    cursor: not-allowed;
+    filter: saturate(200%);
+}
+
+[data-md-color-scheme="default"] .not_found:hover {
+    color: grey;
+    background-color: lightgrey;
+    cursor: not-allowed;
+    filter: saturate(200%);
+}
+
+.tooltip_templates {
+    display: none;
+}
+
+[data-md-color-scheme="slate"] .tooltipster-sidetip .tooltipster-box {
+    background-color: #00000063 !important;
+    border: none;
+}
+
+[data-md-color-scheme="default"] .tooltipster-sidetip .tooltipster-box {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    border: none;
+}
+
+[data-md-color-scheme="default"] .tooltipster-sidetip .tooltipster-content {
+    color: black !important;
+    font-family: var(--md-text-font-family);
+}
+
+[data-md-color-scheme="default"] .citation {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-md-color-scheme="slate"] .citation:hover {
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+[data-md-color-scheme="slate"] .citation {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-md-color-scheme="default"] .citation:hover {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.citation {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.citation>* {
+    margin: 0 !important;
+}
+
+.link_citation {
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    font-weight: normal;
+}
+
+code {
+  display: inline-block;
+}
+
+.md-typeset pre > code {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+[data-md-color-scheme="slate"] #mkdocs-content-password {
+    background-color:rgba(0, 0, 0, 0.11)
+}
+
+[data-md-color-scheme="default"] #mkdocs-content-password {
+    background-color:white;
+}
+
+#mkdocs-content-password {
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    padding-left: 10px;
+}
+
+#mkdocs-decrypt-button {
+    border-radius: 5px;
+    fill: var(--md-default-fg-color--light);
+    height: 30px;
+    width: 5%;
+}
+

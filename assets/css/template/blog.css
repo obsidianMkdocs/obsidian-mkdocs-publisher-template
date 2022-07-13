@@ -1,0 +1,109 @@
+.md-typeset hr {
+    margin: 0;
+}
+
+/* post */
+.md-typeset .post {
+    margin-bottom: 1rem;
+    padding: 1em;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 5px;
+    background-color: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .post .post-category {
+    color: gray;
+    font-size: small;
+    float: right;
+    width: 100%;
+}
+
+.md-typeset .post .post-title {
+    margin: 0.25rem 0;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.md-typeset .post .post-info-wrap {
+    display: flex;
+}
+
+.md-typeset .post .post-info {
+    width: 100%;
+}
+
+.md-typeset .post .post-banner {
+    margin-top: -1rem;
+    height: 100%;
+    max-height: 4rem;
+    border-radius: 5px;
+}
+
+.md-typeset .post .post-description {
+    margin: 0 1rem 0 0;
+}
+
+.md-typeset .post .post-extra {
+    margin: 0.5rem 1rem 0 0;
+    font-size: small;
+    color: darkgray;
+}
+
+.md-typeset .post .post-tags {
+    margin: 0;
+    text-align: end;
+}
+
+.md-typeset .post .post-date {
+    margin: 0;
+}
+
+.md-typeset .twemoji,
+.md-typeset .icon-text,
+.md-typeset .git-revision-date-localized-plugin {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.post-category>.twemoji {
+    vertical-align: sub;
+}
+
+/* page */
+.md-typeset .pages>.page {
+    display: none;
+}
+
+.md-typeset .pages>.page:target {
+    display: block;
+}
+
+/* pagination */
+.md-typeset .center {
+    text-align: center;
+}
+
+.md-typeset .pagination {
+    display: inline-block;
+    margin-top: 0.5em;
+}
+
+.md-typeset .pagination a {
+    color: var(--md-default-fg-color);
+    float: left;
+    padding: 0 0.5em;
+    margin: 0 0.1em;
+    text-decoration: none;
+    border-radius: 2em;
+}
+
+.md-typeset .pagination a.active {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+}
+
+.md-typeset .pagination a:hover:not(.active) {
+    background-color: var(--md-accent-fg-color);
+    color: var(--md-default-fg-color--light);
+}
