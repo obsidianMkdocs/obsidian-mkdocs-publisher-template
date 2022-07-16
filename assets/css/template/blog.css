@@ -11,6 +11,10 @@
     background-color: var(--md-default-fg-color--lightest);
 }
 
+.post:hover {
+    border: none;
+}
+
 .md-typeset .post .post-category {
     color: gray;
     font-size: small;
